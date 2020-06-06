@@ -1,7 +1,12 @@
 <button
 mat-flat-button
 color='primary'
-(click)='loots(10, 4)'
+(click)='loots(15, 5)'
 >   
     Touche-moi
 </button>   
+<div *ngIf='loot'>
+<h1>Charbon {{charbon()}}</h1>
+<h1>Quartz {{quartz()}}</h1>
+<h1>Topaze {{topaze()}}</h1>
+</div>
